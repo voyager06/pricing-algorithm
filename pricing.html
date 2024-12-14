@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing View</title>
+</head>
+<body>
+    <h1>Adjusted Prices</h1>
+    <ul>
+        {% for item in prices %}
+        <li>{{ item.name }}: ${{ item.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
